@@ -1,0 +1,51 @@
+.contact_Container {
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-around;
+  padding-top: 90px;
+  gap: 10px;
+}
+.contact_form {
+  margin: auto;
+  width: 50%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input {
+  padding: 10px 30px;
+  background-color: transparent;
+}
+::placeholder {
+  color: black;
+  font-weight: 600;
+}
+button {
+  padding: 10px 40px;
+  background-color: black;
+  color: aliceblue;
+  border: none;
+  border-radius: 2px;
+  margin: auto;
+}
+img {
+  width: 100%;
+}
+.img_container {
+  max-width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact_Container {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact_form {
+    width: 100%;
+  }
+  .img_container {
+    max-width: 100%;
+  }
+}
